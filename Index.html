@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Date Calculator</title>
+        <link rel="stylesheet" href="dateStyle.css">
+    </head>
+    
+    <body>
+        <div class="container" id="top-sec">
+            <h1 class="large">Date Calculator</h1>
+            <div class="tool-info">
+                <p class="large">You can find the day on any date and also find a date obtained by adding or subtracting a number of days from a given date by using our awesome free tool!</p>
+            </div>
+        </div>
+        <div>
+            <form id="getDate">
+            <div class="row">
+                <div class="col-6">
+                    <div class="date-text">
+                        <h2>Enter date : </h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-fields">
+                        <input class="dd" type="text" placeholder="DD" id="dayField"><label> /</label>
+                        <input class="mm" type="text" placeholder="MM" id="monthField"><label> /</label>
+                        <input class="yy" type="text" placeholder="YY" id="yearField">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="date-text">
+                        <h2>Add days : </h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-fields">
+                        <input class="add" type="text" placeholder="Days" id="addField">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="date-text">
+                        <h2>Subtract days : </h2>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="input-fields">
+                        <input class="subtract" type="text" placeholder="Days" id="subField">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <input class="add" type="submit" value="Calculate New Date">
+                </div>
+            </div>
+            <h2 class="result" id="resultField"></h2>
+            </form>
+        </div>
+        <script type="text/javascript" src="date.js"></script>
+    </body>
+</html>
